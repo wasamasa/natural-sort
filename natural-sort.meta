@@ -1,0 +1,5 @@
+((synopsis "Natural sorting procedures")
+ (author "Vasilij Schneidermann")
+ (license "MIT")
+ (category data)
+ (test-depends test))
