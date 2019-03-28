@@ -1,0 +1,7 @@
+((synopsis "Natural sorting procedures")
+ (author "Vasilij Schneidermann")
+ (license "MIT")
+ (category data)
+ (test-dependencies test)
+ (components (extension natural-sort
+                        (csc-options "-O3" "-d1"))))

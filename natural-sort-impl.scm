@@ -1,7 +1,14 @@
 (import scheme)
-(import chicken scheme)
 
-(use irregex data-structures)
+(cond-expand
+ (chicken-4
+  (import chicken)
+  (use irregex data-structures))
+ (chicken-5
+  (import (chicken base))
+  (import (chicken irregex))
+  (import (chicken sort))
+  (import (chicken string))))
 
 (define number-re (make-parameter '(+ num)))
 

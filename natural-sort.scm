@@ -6,6 +6,11 @@
    natural-string>? natural-string>=?
    natural-sort)
 
-  (import chicken scheme)
+  (import scheme)
+  (cond-expand
+   (chicken-4
+    (import chicken))
+   (chicken-5
+    (import (chicken base))))
 
   (include "natural-sort-impl.scm"))
