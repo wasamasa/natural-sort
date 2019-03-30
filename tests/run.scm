@@ -1,4 +1,11 @@
-(use natural-sort test srfi-13)
+(import scheme)
+(cond-expand
+ (chicken-4
+  (use natural-sort test srfi-13))
+ (chicken-5
+  (import natural-sort)
+  (import test)
+  (import (srfi 13))))
 
 (test-group "Comparison"
   (test  0 (natural-string-compare "" ""))

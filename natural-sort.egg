@@ -2,6 +2,6 @@
  (author "Vasilij Schneidermann")
  (license "MIT")
  (category data)
- (test-dependencies test)
+ (test-dependencies test srfi-13)
  (components (extension natural-sort
                         (csc-options "-O3" "-d1"))))
