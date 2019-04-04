@@ -4,4 +4,5 @@
  (category data)
  (test-dependencies test srfi-13)
  (components (extension natural-sort
-                        (csc-options "-O3" "-d1"))))
+                        (csc-options "-O3" "-d1")
+                        (source-dependencies "natural-sort-impl.scm"))))
